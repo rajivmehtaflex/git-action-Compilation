@@ -24,4 +24,5 @@ jobs:
       - name: execute make file command
         run: |
           make listdir
-          make envronmentlist
+          echo $GITHUB_SHA
+          echo $GITHUB_REPOSITORY
