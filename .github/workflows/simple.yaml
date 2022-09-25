@@ -1,6 +1,8 @@
 name: Start the execution
 
-on: [push]
+on: 
+  repository_dispatch:
+    types: [build]
 
 jobs:
   run-shell-command:
