@@ -6,6 +6,7 @@ jobs:
   run-shell-command:
     runs-on: ubuntu-latest
     steps: 
+      - uses: actions/checkout@v3
       - name: echo a string
         run: echo 'Gajraj'
       - name: execute multiple line command
@@ -13,3 +14,7 @@ jobs:
           node -v
           npm -v
           cat /etc/*-release
+      - name: execute make file command
+        run: |
+          make sample1
+          make sample2
