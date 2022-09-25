@@ -6,4 +6,7 @@ sample2:
 
 listdir:
 	ls -alr
-		
+
+envronmentlist:
+	echo 'Data-->'$GITHUB_SHA
+
