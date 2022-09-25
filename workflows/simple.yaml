@@ -1,0 +1,15 @@
+name: Start the execution
+
+on: [push]
+
+jobs:
+  run-shell-command:
+    runs-on: ubuntu-latest
+    steps: 
+      - name: echo a string
+        run: echo 'Gajraj'
+      - name: execute multiple line command
+        run: |
+          node -v
+          npm -v
+          cat /etc/*-release
