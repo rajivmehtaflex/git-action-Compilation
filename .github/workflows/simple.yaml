@@ -7,6 +7,13 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - uses: actions/checkout@v3
+      - name: javascript base actions
+        id: greet
+        uses: actions/hello-world-javascript-action@main
+        with:
+          who-to-greet: 'Mantra Mehta'
+      - name: display output from javascript based actions
+        run: echo "${{ steps.greet.outputs.time }}"
       - name: echo a string
         run: echo 'Gajraj'
       - name: execute multiple line command
