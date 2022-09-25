@@ -9,6 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps: 
       - uses: actions/checkout@v3
+      - name: Check payload
+        run: |
+          echo "${{github.event.objref.name}}"
+          echo "${{github.event.objref.lastName}}"
       - name: javascript base actions
         id: greet
         uses: actions/hello-world-javascript-action@main
