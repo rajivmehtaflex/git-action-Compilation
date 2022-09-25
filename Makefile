@@ -3,3 +3,7 @@ sample1:
 
 sample2:
 	@echo 'Line-2'
+
+listdir:
+	ls -alr
+		

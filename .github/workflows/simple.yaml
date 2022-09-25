@@ -23,5 +23,4 @@ jobs:
           cat /etc/*-release
       - name: execute make file command
         run: |
-          make sample1
-          make sample2
+          make listdir
