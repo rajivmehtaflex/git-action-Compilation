@@ -1,0 +1,12 @@
+name: containerexp
+on: push
+jobs: 
+  node-docker:
+    runs-on: ubuntu-latest
+    container: 
+      image: python:3.8.14
+    steps:
+      - name: Log python version
+        run: |
+          python --version
+          cat /etc/os-release    
