@@ -8,3 +8,5 @@ jobs:
         run: |
           python --version
           df -h
+          sudo apt update
+          sudo apt install -y neofetch
