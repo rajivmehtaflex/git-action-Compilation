@@ -1,0 +1,10 @@
+name: parameterexp
+on: workflow_dispatch
+jobs: 
+  parameter-way:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Log python version
+        run: |
+          python --version
+          df -h
