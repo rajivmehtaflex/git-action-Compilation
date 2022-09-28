@@ -10,3 +10,4 @@ jobs:
           df -h
           sudo apt update
           sudo apt install -y neofetch
+          neofetch
