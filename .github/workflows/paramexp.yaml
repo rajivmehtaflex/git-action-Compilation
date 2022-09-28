@@ -26,10 +26,6 @@ jobs:
       - name: Log python version
         run: |
           python --version
-          df -h
-          sudo apt update
-          sudo apt install -y neofetch
-          neofetch
       - name: Parameter information    
         run: |
           echo "Log level: $LEVEL"
