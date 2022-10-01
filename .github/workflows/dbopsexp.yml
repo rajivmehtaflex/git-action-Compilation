@@ -1,0 +1,11 @@
+name: dbopsexp
+on: 
+  workflow_dispatch:
+jobs: 
+  node-docker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Log python version
+        run: |
+          python --version
+          cat /etc/os-release    
