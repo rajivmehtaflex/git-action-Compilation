@@ -8,10 +8,17 @@ jobs:
   dbops-download:
     runs-on: ubuntu-latest
     steps:
-      - name: Log python version
-        env:
-          STUDENT_NAME: mantra
-        run: |
-          echo "There is  a ${STUDENT_NAME}"
-          python --version
-          cat /etc/os-release    
+        - name: Checkout
+          uses: actions/checkout@v2
+          with:
+            fetch-depth: 0 # Let's get all the branches    
+        - name: Log python version
+          env:
+            STUDENT_NAME: mantra
+          run: ./test-shell.plugin
+                
+
+          # run: |
+          #   echo "There is  a ${STUDENT_NAME}"
+          #   python --version
+          #   cat /etc/os-release    
