@@ -29,3 +29,6 @@ jobs:
             
         - name: check JAVA Version  
           run: java --version
+
+        - name: Check liquibase version
+          run: ./liquibase/liquibase --version
