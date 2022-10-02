@@ -34,4 +34,4 @@ jobs:
           run: |
             echo $PWD
             sudo chmod +rwx $PWD/liquibase/internal/lib/liquibase-core.jar
-            ./liquibase/liquibase --version
+            $PWD/liquibase/liquibase --version
