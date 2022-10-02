@@ -1,11 +1,17 @@
 name: dbopsexp
 on: 
   workflow_dispatch:
+permissions:
+  contents: write
+  pull-requests: write
 jobs: 
-  node-docker:
+  dbops-download:
     runs-on: ubuntu-latest
     steps:
       - name: Log python version
+        env:
+          STUDENT_NAME: mantra
         run: |
+          echo "There is  a ${STUDENT_NAME}"
           python --version
           cat /etc/os-release    
