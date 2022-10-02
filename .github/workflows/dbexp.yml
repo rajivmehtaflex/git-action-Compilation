@@ -32,6 +32,4 @@ jobs:
 
         - name: Check liquibase version
           run: |
-            echo $PWD
-            sudo chmod +rwx $PWD/liquibase/internal/lib/liquibase-core.jar
-            $PWD/liquibase/liquibase --version
+            make installliquibase

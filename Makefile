@@ -23,4 +23,10 @@ installactionrun:
 	@sudo cp /bin/act /etc
 	@sudo rm -rf ./bin
 
+installliquibase:
+	@echo $PWD
+	@tar -xf liquibase-4.16.1.tar.gz
+	@sudo chmod +rwx $PWD/liquibase/internal/lib/liquibase-core.jar
+	@$PWD/liquibase/liquibase --version
+
 
