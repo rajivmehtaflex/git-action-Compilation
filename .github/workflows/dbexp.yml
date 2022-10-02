@@ -33,5 +33,5 @@ jobs:
         - name: Check liquibase version
           run: |
             echo $PWD
-            sudo chmod +rwx /liquibase/internal/lib/liquibase-core.jar
+            sudo chmod +rwx ./liquibase/internal/lib/liquibase-core.jar
             ./liquibase/liquibase --version
