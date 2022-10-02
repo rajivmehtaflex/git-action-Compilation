@@ -9,6 +9,10 @@ sample2:
 listdir:
 	ls -alr
 
+changepermission:
+	chmod +x ./test-shell.plugin
+	ls -alr ./test-shell.plugin
+
 installactionrun:
 	@sudo rm -rf /etc/act
 	@curl https://raw.githubusercontent.com/nektos/act/master/install.sh | sudo bash

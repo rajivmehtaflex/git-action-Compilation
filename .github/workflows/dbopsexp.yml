@@ -13,16 +13,8 @@ jobs:
           with:
             fetch-depth: 0 # Let's get all the branches    
         - name: Change Permission
-          run: |
-            chmod +x ./test-shell.plugin
-            ls -alr ./test-shell.plugin
+          run: make changepermission
         - name: Log python version
           env:
-            STUDENT_NAME: mantra
+            STUDENT_NAME: Sonal Mehta
           run: ./test-shell.plugin
-                
-
-          # run: |
-          #   echo "There is  a ${STUDENT_NAME}"
-          #   python --version
-          #   cat /etc/os-release    
