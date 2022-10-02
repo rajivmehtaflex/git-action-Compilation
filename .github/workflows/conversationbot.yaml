@@ -1,6 +1,11 @@
 name: conversationbot
 
-on: workflow_dispatch
+on:
+  workflow_dispatch:
+    inputs:
+      message:
+        description: Enter message that transfer to discord
+        required: true
 
 jobs:
   connect_with_bot:
@@ -16,4 +21,4 @@ jobs:
           DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
         uses: Ilshidur/action-discord@master
         with:
-          args: 'Gajraj,Something happen'          
+          args: 'Here is the message:: ${{github.event.inputs.message}}'          
