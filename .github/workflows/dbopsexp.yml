@@ -26,5 +26,6 @@ jobs:
           with:
             distribution: 'corretto'
             java-version: '11'
-        - run: java --version
+          
+          run: java --version
 
