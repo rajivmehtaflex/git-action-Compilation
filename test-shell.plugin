@@ -3,7 +3,7 @@
 import sys
 import os
 
-get_os_detail='cat /etc/os-release'
+get_os_detail='df -h'
 
 print(f'CPU count is --> {os.cpu_count()}')
 print(f'Total memory is --> {os.sysconf("SC_PAGE_SIZE") * os.sysconf("SC_PHYS_PAGES")}')
