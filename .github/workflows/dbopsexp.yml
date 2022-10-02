@@ -9,15 +9,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
         - name: Checkout
-          uses: actions/checkout@v2
+          uses: actions/checkout@v3
           with:
             fetch-depth: 0 # Let's get all the branches    
         - name: OS level modifications.
           run: |
             make changepermission
-            make installneofetch
 
         - name: Log python version
           env:
             STUDENT_NAME: Sonal Mehta
           run: ./test-shell.plugin
+
+        - name: Set JAVA Version
+        - uses: actions/setup-java@v3
+          with:
+            distribution: 'corretto'
+            java-version: '11'
+        - run: java --version
+
