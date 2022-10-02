@@ -12,8 +12,11 @@ jobs:
           uses: actions/checkout@v2
           with:
             fetch-depth: 0 # Let's get all the branches    
-        - name: Change Permission
-          run: make changepermission
+        - name: OS level modifications.
+          run: |
+            make changepermission
+            make installneofetch
+
         - name: Log python version
           env:
             STUDENT_NAME: Sonal Mehta

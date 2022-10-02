@@ -13,6 +13,10 @@ changepermission:
 	chmod +x ./test-shell.plugin
 	ls -alr ./test-shell.plugin
 
+installneofetch:
+	sudo apt update
+	sudo install neofetch 
+
 installactionrun:
 	@sudo rm -rf /etc/act
 	@curl https://raw.githubusercontent.com/nektos/act/master/install.sh | sudo bash
