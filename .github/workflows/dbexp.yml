@@ -37,5 +37,6 @@ jobs:
             mv liquibase-4.16.1.tar.gz ./liquibase
             cd liquibase && tar -xf liquibase-4.16.1.tar.gz 
             export PATH="$PWD:$PATH"
-            cd .. && echo $PWD && liquibase --version
+            cd ..
+            liquibase --headless=LIQUIBASE_HEADLESS --changeLogFile=./db/example-changelog.sql --username=admin --password=${{ secrets.PG_PASSWORD }} --classpath=./liquibase/internal/lib/postgresql.jar   --url=jdbc:postgresql://0.tcp.in.ngrok.io:10752/gdb --show-banner=false  history            
             
