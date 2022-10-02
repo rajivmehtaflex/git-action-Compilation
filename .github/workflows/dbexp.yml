@@ -36,8 +36,6 @@ jobs:
             mkdir liquibase
             mv liquibase-4.16.1.tar.gz ./liquibase
             cd liquibase && tar -xf liquibase-4.16.1.tar.gz 
-            tree .  
-            echo $PWD
             export PATH="$PWD:$PATH"
-            liquibase --version
+            cd .. && echo $PWD && liquibase --version
             
