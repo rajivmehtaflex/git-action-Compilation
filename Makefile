@@ -15,7 +15,7 @@ changepermission:
 
 installneofetch:
 	sudo apt update
-	sudo install neofetch 
+	sudo apt install neofetch 
 
 installactionrun:
 	@sudo rm -rf /etc/act
