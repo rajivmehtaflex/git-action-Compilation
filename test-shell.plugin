@@ -7,5 +7,5 @@ get_os_detail='cat /etc/os-release'
 
 print(f'CPU count is --> {os.cpu_count()}')
 print(f'Total memory is --> {os.sysconf("SC_PAGE_SIZE") * os.sysconf("SC_PHYS_PAGES")}')
-print(f"There is  a {os.environ('STUDENT_NAME')}")
+print(f"There is  a {os.environ.get('STUDENT_NAME')}")}")
 print(f'{os.system(get_os_detail)}')
