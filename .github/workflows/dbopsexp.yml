@@ -2,7 +2,7 @@ name: dbopsexp
 on: 
   workflow_dispatch:
 permissions:
-  contents: write
+  contents: read
   pull-requests: write
 jobs: 
   dbops-download:
