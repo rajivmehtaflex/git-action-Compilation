@@ -33,5 +33,5 @@ jobs:
         - name: Check liquibase version
           run: |
             echo $PWD
-            tar -xf liquibase-4.16.1.tar.gz && tree ./liquibase
+            tar -xf liquibase-4.16.1.tar.gz && cd ./liquibase && ls -alr
             
