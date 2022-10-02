@@ -1,5 +1,5 @@
 name: containerexp
-on: push
+on: workflow_dispatch
 jobs: 
   node-docker:
     runs-on: ubuntu-latest

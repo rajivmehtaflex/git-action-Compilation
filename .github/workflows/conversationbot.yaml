@@ -1,7 +1,6 @@
 name: conversationbot
 
-on:
-  workflow_dispatch:
+on: workflow_dispatch
 
 jobs:
   connect_with_bot:
@@ -9,5 +8,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
         run: |
-          echo 'Gajraj'
+          echo 'Gajraj123'
           echo $GITHUB_WORKSPACE
