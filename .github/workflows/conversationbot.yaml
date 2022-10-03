@@ -28,8 +28,7 @@ jobs:
         env:
           SLACK_CHANNEL: general
           SLACK_ICON: https://github.com/rtCamp.png?size=48
-          SLACK_MESSAGE: '${{github.event.inputs.message}} :'
-          SLACK_TITLE: Post Title
           SLACK_USERNAME: rtCamp
           SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}  
           MSG_MINIMAL: true        
+          SLACK_TITLE: '${{github.event.inputs.message}} :white_check_mark:'
